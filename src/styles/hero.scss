@@ -1,0 +1,40 @@
+@import './core.scss';
+
+.home-hero {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  @media(max-width: 1024px) {
+    padding-top: 3rem;
+  } 
+  .intro {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.25rem;
+      color: #fff;
+      text-shadow: 0.063rem 0.063rem #373737;
+    }
+    p {
+      font-size: 1.3rem;
+      text-shadow: 0.063rem 0.063rem #373737;
+      color:#fff;
+    }
+  }
+  form {
+    background-color: #fff;
+    padding: 2.5rem 2.5rem;
+    border-radius: 5px 5px;
+    max-width: 500px;
+    margin: 0 auto;
+    h3{
+      font-size: 1.8rem;
+      color: $black;
+      font-weight: 700;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

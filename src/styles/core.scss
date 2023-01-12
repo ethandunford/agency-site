@@ -1,0 +1,72 @@
+@import './colours.scss';
+
+body {
+  color: $grey2;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+ul {
+  margin-bottom:  0.938rem;
+  li {
+    margin-bottom: 0.625rem;
+    icon {
+    margin-right: 0.313rem;
+    color: #e52a3d;
+    }
+  }
+}
+
+.container {
+  @media(max-width: 1023px) {
+    padding:0  1.6rem;
+  }
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.0rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  color: $black;
+}
+
+.section-subtitle {
+  font-weight: 400;
+  color: $grey2;
+  margin-bottom: 1.25rem;
+}
+
+.image-shadow {
+  border-radius: 8px 8px;
+  box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}

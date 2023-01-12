@@ -1,0 +1,19 @@
+.navbar {
+  .navbar-brand {
+    h1 {
+      color:#000;
+    }
+  }
+  .navbar-menu {
+    @media (max-width: 1023px) {
+      box-shadow: none;
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-item {
+      &:hover{
+        color:#3273DC;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.blog-post {
+  padding-top: 4rem;
+  @media(max-width: 1024px) {
+    padding-top: 3rem;
+  } 
+}

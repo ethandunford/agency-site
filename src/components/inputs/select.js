@@ -4,7 +4,7 @@ const SelectBox = ({ value, name, options, disabled, handleChange }) => {
 
   const o = () => {
     return options.map((el) => {
-      return <option value={el}>{el}</option>
+      return <option value={el} key={el}>{el}</option>
     })
   }
 

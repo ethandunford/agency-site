@@ -25,9 +25,8 @@ const Services = () => {
   ]
 
   const s = services.map((el) => {
-    return <div className="column">
+    return <div className="column" key={el.title}>
       <ServiceBox
-        key={el.title}
         icon={el.icon}
         title={el.title}
         text={el.text}

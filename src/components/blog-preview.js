@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import trimContent from '../libs/util'
 
+
 const BlogPreview = ({ dateCreated, slug, title, excerpt, image }) => {
+
   return <div className="columns mb-5">
     <div className="column is-2">
       <img src={image} alt="image" />

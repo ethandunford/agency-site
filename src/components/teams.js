@@ -26,9 +26,8 @@ const teamMemembers = [
 ]
 
 const t = teamMemembers.map((el) => {
-  return <div className="column">
+  return <div className="column" key={el.name}>
     <TeamBucket
-      key={el.name}
       img={el.img}
       name={el.name}
       jobTitle={el.jobTitle}

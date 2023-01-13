@@ -64,6 +64,7 @@ const Home = () => {
     return <>
       {Object.keys(aboutPills).map((el) => {
         return <Pill
+          key={el}
           icon={aboutPills[el].icon}
           title={aboutPills[el].title}
           text={aboutPills[el].text}

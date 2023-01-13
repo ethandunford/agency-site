@@ -19,8 +19,6 @@ A simple agency style website build using React and Bulma.
 - Blog post page
 - 404
 
-If you wish to run this project locally, run npm install and npm run start
-
 ## Running locally
 
 After cloning down the repository if you want to run this project natively, run `npm install` and `npm run start`.

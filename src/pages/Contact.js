@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import zenScroll from 'zenscroll';
+import { scrollToError, successMessage, options } from '../app/form';
 import Teams from '../components/teams'
 import TextInput from '../components/inputs/input'
 import TextArea from '../components/inputs/textarea'
@@ -15,8 +15,6 @@ const Contact = () => {
   const [form, updateForm] = useState({ name: "", email: "", enquiry: "", message: "" })
   const [errors, updateErrors] = useState({})
 
-  const options = ["Select", "Seo", "Brand Awareness", "Graphic Designs", "Web Development", "Other"]
-
   useEffect(() => {
     scrollToError()
   }, [errors])
@@ -27,20 +25,6 @@ const Contact = () => {
       _form[event.target.name] = event.target.value
       updateForm(_form)
     }
-  }
-
-  const scrollToError = () => {
-    const errors = document.getElementsByClassName("error-msg")
-    if (errors.length > 0) {
-      zenScroll.to(document.getElementsByClassName("error-msg")[0])
-    }
-  }
-
-  const successMessage = () => {
-    if (success) {
-      return <p className="has-text-black mt-3">we have received and a member of the team will get back shortly.</p>
-    }
-    return ""
   }
 
   const submit = (event) => {
@@ -126,7 +110,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <AppButton btnText="Contact Us" loading={loading} disabled={disabled} handClick={submit} />
-                {successMessage()}
+                {successMessage(success)}
               </form>
             </div>
             <div className="column is-6">

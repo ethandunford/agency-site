@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import TextInput from '../components/input'
+import TextInput from '../components/inputs/input'
 import '../styles/hero.scss'
 
 const Hero = () => {
